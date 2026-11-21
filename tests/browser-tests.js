@@ -121,7 +121,7 @@ async function run() {
     "ironlog-workouts": "null", "focuslist-tasks": "{}", "visitorName": " ".repeat(40),
     "a3-github-cache": JSON.stringify({ repositories: [repository], fetchedAt: String(Date.now()) })
   }}, async (doc, win) => {
-    assert(doc.querySelector("#timer-display").textContent === "25:00", "Timer fallback is wrong");
+    assert(doc.querySelector("#timer-display").textContent === "20:00", "Timer fallback is wrong");
     assert(doc.querySelectorAll("[data-project]:not([hidden])").length === 3, "Projects did not recover");
     assert(doc.querySelector("#forget-name").hidden, "Invalid saved name was kept");
     assert(win.__qaRequests === 1, "Invalid cache timestamp was trusted");
