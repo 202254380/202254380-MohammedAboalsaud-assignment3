@@ -62,7 +62,7 @@ globalThis.PortfolioCore = (() => {
   function normalizeTimer(value, now = Date.now()) {
     const source = value && typeof value === "object" ? value : {};
     const minutes = Number.isInteger(source.minutes) && source.minutes >= 1
-      && source.minutes <= 60 ? source.minutes : 25;
+      && source.minutes <= 60 ? source.minutes : 20;
     const remaining = Number.isInteger(source.remaining) && source.remaining >= 0
       && source.remaining <= minutes * 60 ? source.remaining : minutes * 60;
     const running = source.running === true && Number.isFinite(source.deadline)
