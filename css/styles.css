@@ -2,7 +2,7 @@
 :root {
   color-scheme: light;
   --background: #f7f7fc; --surface: #fff; --text: #1e2030; --muted: #595d70;
-  --accent: #5941b8; --accent-light: #efebfc; --on-accent: #fff;
+  --accent: #4a33a0; --accent-light: #efebfc; --on-accent: #fff;
   --border: #dcdbe8; --error: #a52a26; --success: #196840;
   --shadow: 0 12px 34px rgb(40 30 80 / 6%);
 }
