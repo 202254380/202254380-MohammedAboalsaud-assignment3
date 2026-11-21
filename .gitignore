@@ -1,0 +1,15 @@
+# Private AI evidence belongs on Blackboard, not in the public repository.
+*ai-evidence*.zip
+/conversations/
+/artifacts/
+
+# Generated reports, dependencies, editor state, and secrets.
+node_modules/
+/test-results/
+/lighthouse-report*
+.openai/
+.env*
+!.env.example
+.DS_Store
+Thumbs.db
+*.log
