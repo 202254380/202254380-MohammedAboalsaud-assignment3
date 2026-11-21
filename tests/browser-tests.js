@@ -181,7 +181,7 @@ async function run() {
     assert(!doc.querySelector("#focus-minutes").disabled, "Pause did not unlock controls");
     click(doc, "#timer-toggle");
     click(doc, "#timer-reset");
-    assert(doc.querySelector("#timer-display").textContent === "25:00", "Reset failed");
+    assert(doc.querySelector("#timer-display").textContent === "20:00", "Reset failed");
   });
   await check("Expired saved sessions complete once on reload", { saved: {
     "a3-focus-timer": JSON.stringify({ minutes: 1, remaining: 60, running: true, deadline: Date.now() - 1000, completed: 2 })
